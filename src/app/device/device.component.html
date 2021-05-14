@@ -1,0 +1,37 @@
+
+<div class="wrapper">
+    <div class="row">
+        <div *ngFor="let d of deviceDisplay;" class="column">
+            <div class="column-para">
+                <img src="{{d.logo}}" alt="">
+                <h4>{{d.title}}</h4>
+                
+                <p>{{d.desc}}</p>
+            </div>
+            <div class="column-image">
+                <img src="{{d.image}}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="mobile-wrapper">
+    <nav>
+        <img src="https://krds-assignment.github.io/aoc/api-assets/logo-aoc.png" alt="">
+    </nav>
+    <owl-carousel-o [options]="customOptions" class="mobile-carousel">
+  
+        <ng-container>
+            <ng-template *ngFor="let d of deviceDisplay;" carouselSlide>
+                <div class="slider">
+                    <img src="{{d.logo}}" alt="">
+                    <h4>{{d.title}}</h4>
+                    <p>{{d.desc}}</p>
+                    <img src="{{d.image}}">
+                </div>
+            </ng-template>
+        </ng-container>
+  
+    </owl-carousel-o>
+</div>

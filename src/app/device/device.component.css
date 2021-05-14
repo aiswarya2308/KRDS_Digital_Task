@@ -1,0 +1,195 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,700;1,800&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0!important;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+.wrapper{
+    margin: 0;
+    height: 96vh;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 30px 50px;
+    height: 300px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column-para{
+    float: left;
+    color: #fff;
+    padding-top: 80px;
+}
+.column-para h4{
+    width: 130px;
+    font-weight: 400;
+    padding-top: 10px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 8px;
+}
+.column-para p{
+    width: 170px;
+    padding-top: 10px;
+    font-size: 13px;
+}
+.column-image{
+    float: right;
+}
+.column-para img{
+    width: 40px;
+}
+.column-image img{
+    width: 135px;
+    min-height: 200px;
+    padding-top: 30px;
+}
+.column:nth-child(1) { 
+    background: rgba(2, 158, 2, 0.5); 
+    width: 33.3%;
+    height: 50vh;
+    background-image: url('https://krds-assignment.github.io/aoc/api-assets/logo-aoc.png');
+    background-position:initial;
+    background-position-y: 15px;
+    background-position-x: 15px;
+    background-repeat: no-repeat;
+    background-size: 80px;
+}
+.column:nth-child(2) { 
+    background: rgba(243, 160, 7, 0.6); 
+    width: 33.3%;
+    height: 50vh;
+}
+.column:nth-child(3) { 
+    background: rgba(14, 149, 240, 0.6); 
+    width: 33.3%;
+    height: 50vh;
+}
+.column:nth-child(4) { 
+    background: rgba(240, 117, 60, 0.6); 
+    width: 33.3%;
+    height: 50vh;
+}
+.column:nth-child(5) { 
+    background: rgba(253, 68, 170, 0.6); 
+    width: 33.3%;
+    height: 50vh;
+}
+.column:nth-child(6) { 
+    background: rgba(25, 191, 241, 0.6); 
+    width: 33.3%;
+    height: 50vh;
+}
+.column-image img:nth-child(6) { 
+    width: 200px!important;
+}
+
+@media screen and (max-width: 1024px) {
+    .row{
+        width: 1024px;
+        overflow: hidden;
+    }
+    .wrapper{
+        width: 100%;
+        height: 100vh;
+    }
+    .column{
+        padding-left: 10px;
+        padding-right: 5px;
+        width: 20%;
+    }
+    .column-para{
+        padding-top: 50px;
+    }
+    .column-para h4{
+        font-size: 10px;
+        width: 80px;
+    }
+    .column-para p{
+        width: 80px;
+        padding-top: 10px;
+        font-size: 10px;
+    }
+    .column-image img{
+        width: 100px;
+        padding-top: 0;
+    }
+    .column:nth-child(1) { 
+        height: 25vh;
+    }
+    .column:nth-child(2) { 
+        height: 25vh;
+    }
+    .column:nth-child(3) { 
+        height: 25vh;
+    }
+    .column:nth-child(4) { 
+        height: 25vh;
+    }
+    .column:nth-child(5) { 
+        height: 25vh;
+    }
+    .column:nth-child(6) { 
+        height: 25vh;
+    }
+    .mobile-wrapper{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper{
+        display: none;
+    }
+    .mobile-wrapper{
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+    .mobile-wrapper nav{
+        background: #000;
+        width: 100%;
+    }
+    nav img{
+        width: 100px;
+        padding: 20px;
+    }
+
+    .mobile-carousel{
+        width: 100%;
+    }
+    .slder{
+        padding-left: 100px;
+    }
+    .slider:nth-child(1) { 
+        background: rgba(2, 158, 2, 0.5); 
+    }
+    .slider:nth-child(2) { 
+        background: rgba(243, 160, 7, 0.6); 
+    }
+    .slider:nth-child(3) { 
+        background: rgba(14, 149, 240, 0.6); 
+    }
+    .slider:nth-child(4) { 
+        background: rgba(240, 117, 60, 0.6); 
+    }
+    .slider:nth-child(5) { 
+        background: rgba(253, 68, 170, 0.6); 
+    }
+    .slider:nth-child(6) { 
+        background: rgba(25, 191, 241, 0.6); 
+    }
+}
+
